@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Topforum</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -26,19 +26,32 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Sponsors</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">Sponsors</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="sponsors.html">General Sponsor</a></li>
+                        <div class="hr_line"></div>
+                        <li><a class="dropdown-item dropdown-item_active" href="#">Platinum Sponsor</a>
+                        </li>
+                        <div class="hr_line"></div>
+                        <li><a class="dropdown-item" href="#">High-tech Sponsor</a></li>
+                        <div class="hr_line"></div>
+                        <li><a class="dropdown-item" href="#">Gold Sponsor</a></li>
+                        <div class="hr_line"></div>
+                        <li><a class="dropdown-item" href="#">Silver Night Sponsor</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Exhibitors</a>
+                    <a class="nav-link active" href="#">Exhibitors</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Speakers</a>
+                    <a class="nav-link active" href="#">Speakers</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Media</a>
+                    <a class="nav-link active" href="#">Media</a>
                 </li>
-              </ul>
+            </ul>
               <form class="d-flex">
                 <a href="#"><button class="btn menu_btn" type="submit">TOP FORUM CLUB</button></a>
               </form>
@@ -69,10 +82,8 @@
             </div>
           </div>
 
-          <div class="col-md-2 offset-md-3">
-            <form class="d-flex">
-              <a href="#"><button class="btn subheader_btn" type="submit">REGISTER NOW</button></a>
-            </form>
+          <div class="col-md-2 offset-md-3">            
+              <a href="registration.html"><button class="btn subheader_btn" type="submit">REGISTER NOW</button></a>
           </div>
         </div>
       </div>
@@ -85,7 +96,7 @@
         26-27 <span>OCTOBER</span> <span>2016</span>
       </div>
       <div class="conference_text">
-        <div class="conference_header">Wealth TOP FORUM Israel 2016</div>
+        <div class="conference_heading">Wealth TOP FORUM Israel 2016</div>
         <div class="conference_descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy<br><span>Barcelona</span>
         </div>
@@ -95,7 +106,7 @@
 
   <section class="communication">
     <div class="container">
-      <div class="communication_text">TOP FORUM is an international business communication company.
+      <div class="text">TOP FORUM is an international business communication company.
         Our main idea is to take your business to the next level.
         To make this transformation happen you need to have a platform to meet hundreds of new clients and specialists,
         become aware of new trends and soak up fresh ideas from best experts.
@@ -108,7 +119,7 @@
       <div class="row">
         <div class="col-md-4">
           <img src="icons/communication1.png" alt="communication1" class="communication_icon">
-          <div class="communication_header">FOR FUTURE SPONSORS AND EXHIBITORS</div>
+          <div class="communication_heading">FOR FUTURE SPONSORS AND EXHIBITORS</div>
           <div class="communication_descr">TOP FORUM conferences are the best route to raise brand awareness, get pre-
             and after-event promotion among your target audience, confirm the highest level of your business, present
             your company services and catch the interest of highly qualified prospects and as a result to find new
@@ -120,7 +131,7 @@
 
         <div class="col-md-4">
           <img src="icons/communication2.png" alt="communication2" class="communication_icon">
-          <div class="communication_header">BECOME A DELEGATE</div>
+          <div class="communication_heading">BECOME A DELEGATE</div>
           <div class="communication_descr">BECOME A DELEGATE TOP FORUM business conferences and events serve as the best
             platform to learn useful insights and new trends in your business area, engage with peers from the global
             community and choose the best available offer, and all that in one place, so your participation will safe
@@ -132,7 +143,7 @@
 
         <div class="col-md-4">
           <img src="icons/communication3.png" alt="communication3" class="communication_icon">
-          <div class="communication_header">FOR FUTURE SPEAKERS</div>
+          <div class="communication_heading">FOR FUTURE SPEAKERS</div>
           <div class="communication_descr">FOR FUTURE SPEAKERS We thoroughly choose the key experts to make a speech at
             TOP FORUM international conferences and our audience obtains the most up-to-date information about new
             trends on the market. Should you like to share useful insights, become a speaker or to take part in panel
@@ -142,16 +153,41 @@
           <div class="communication_signature">Wealth TOP FORUM Israel 2016</div>
         </div>
 
-        <div class="col-md-2 offset-4"><a href="#"><button class="register_btn">Register now</button></a></div>
+        <div class="col-md-2 offset-4"><a href="registration.html"><button class="register_btn">Register now</button></a></div>
 
-        <div class="col-md-2"><a href="#"><button class="subscribe_btn">Subscribe</button></a></div>
+        <div class="col-md-2"><a href="#"><button class="subscribe_btn btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe</button></a></div>
       </div>
     </div>
   </section>
 
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">              
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h2 class="modal_heading">SUBSCRIBE</h2>
+            <div class="modal_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            <form>
+                <input class="modal_form" name="name" type="text" placeholder="NAME AND SURNAME">
+            </form>
+            <form>
+                <input class="modal_form" name="company" type="text" placeholder="COMPANY NAME">
+            </form>
+            <form>
+                <input class="modal_form" name="email" type="email" placeholder="E-MAIL">
+            </form>
+            <button type="button" class="btn modal_btn"><a href="#">Subscribe</a></button>                
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
   <section class="reviews">
     <div class="container">
-      <h2 class="header text-center">CUSTOMER REVIEWS</h2>
+      <h2 class="heading text-center">CUSTOMER REVIEWS</h2>
       <div class="row">
         <div class="col-md-2">
           <img src="img/review1.png">
@@ -190,7 +226,7 @@
 
   <section class="video">
     <div class="container">
-      <h2 class="header text-center">Promo video</h2>
+      <h2 class="heading">Promo video</h2>
       <iframe class="video_clip" width="682" height="396" src="https://www.youtube.com/embed/v-8g0pEBHqE"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
@@ -198,7 +234,7 @@
   </section>
 
   <section class="clients">
-    <h2 class="header text-center">Our clients</h2>
+    <h2 class="heading">Our clients</h2>
     <div class="container">
       <div class="clients_carousel">
         <div><img src="img/carousel1.png"></div>
@@ -216,8 +252,8 @@
       <div class="row">
         <div class="col-md-2">
           <div class="footer_items">
-            <h2 class="footer_header">TOP FORUM</h2>
-            <a href="#" class="footer_link">Sponsors</a>
+            <h2 class="footer_heading">TOP FORUM</h2>
+            <a href="sponsors.html" class="footer_link">Sponsors</a>
             <a href="#" class="footer_link">Exhibitors</a>
             <a href="#" class="footer_link">Speakers</a>
             <a href="#" class="footer_link">Media</a> 
@@ -226,14 +262,14 @@
         </div>
         
         <div class="col-md-4">
-          <h2 class="footer_header">CONTACT</h2> 
+          <h2 class="footer_heading">CONTACT</h2> 
           <div class="footer_text">Top Forum Group <br>Trnavska cesta 82, 821 02 Bratislava, Slovakia <br><br>
           <a href="tel:+421 221 025 322">+421 221 025 322</a><br>
           <a href="mailto:info@top-forum.com">info@top-forum.com</a></div>
         </div>
 
         <div class="col-md-2 offset-4">
-          <h2 class="footer_header follow_us"><a href ="#">FOLLOW US</a></h2>
+          <h2 class="footer_heading follow_us"><a href ="#">FOLLOW US</a></h2>
         </div>
 
         <div class="line"></div>
@@ -253,22 +289,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      $('.clients_carousel').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/leftarrow_gray.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/rightarrow_gray.png"></button>'
-
-      });
-    });
-  </script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
